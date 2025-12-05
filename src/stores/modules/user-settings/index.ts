@@ -101,7 +101,7 @@ const initSettings: UserSettingsModel = {
     enable: true,
     text: '@琅環书生',
     fontSize: 40,
-    position: WatermarkPositionEnum.rightBottom,
+    position: WatermarkPositionEnum.centerBottom,
     textColor: '#FFFFFF',
     opacity: 0.5
   },

@@ -64,7 +64,7 @@ const watermarkConfig = reactive<UserSettingsModel['watermark']>({
   text: '',
   fontSize: 0,
   opacity: 0,
-  position: WatermarkPositionEnum.rightBottom,
+  position: WatermarkPositionEnum.centerBottom,
   textColor: ''
 })
 

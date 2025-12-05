@@ -65,6 +65,11 @@ export async function addWatermarkToImage(
       x = canvas.width - ctx.measureText(text).width - 10
       y = canvas.height - 15
       break
+    // 新增：下中心（底部居中）
+    case WatermarkPositionEnum.centerBottom:
+      x = (canvas.width - ctx.measureText(text).width) / 2
+      y = canvas.height - 15
+      break
   }
 
   ctx.strokeText(text, x, y)

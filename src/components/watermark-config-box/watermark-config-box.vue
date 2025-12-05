@@ -64,6 +64,9 @@
             <el-radio :label="WatermarkPositionEnum.rightBottom">
               {{ $t('settings.img_watermark.position_4') }}
             </el-radio>
+            <el-radio :label="WatermarkPositionEnum.centerBottom">
+              {{ $t('settings.img_watermark.position_5') }}
+            </el-radio>
           </el-radio-group>
         </el-form-item>
       </el-col>
@@ -79,7 +82,7 @@ import { WatermarkPositionEnum } from '@/common/model'
 const watermark = reactive({
   text: '',
   fontSize: 0,
-  position: WatermarkPositionEnum.rightBottom,
+  position: WatermarkPositionEnum.centerBottom,
   textColor: '',
   opacity: 0
 })
