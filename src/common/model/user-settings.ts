@@ -18,7 +18,9 @@ export enum WatermarkPositionEnum {
   // eslint-disable-next-line no-unused-vars
   rightTop = 'rightTop',
   // eslint-disable-next-line no-unused-vars
-  rightBottom = 'rightBottom'
+  rightBottom = 'rightBottom',
+  // eslint-disable-next-line no-unused-vars
+  centerBottom = 'centerBottom'
 }
 
 export enum ThemeModeEnum {
