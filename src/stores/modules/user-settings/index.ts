@@ -34,7 +34,7 @@ const initSettings: UserSettingsModel = {
   },
   elementPlusSize: ElementPlusSizeEnum.default,
   imageLinkType: {
-    selected: ImageLinkTypeEnum.jsDelivr,
+    selected: ImageLinkTypeEnum.zz,
     presetList: {
       // zz
       [`${ImageLinkTypeEnum.zz}`]: {

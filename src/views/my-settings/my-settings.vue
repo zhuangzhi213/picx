@@ -213,7 +213,7 @@ watch(
       userSettings.imageName.autoAddHash = false
       userSettings.imageName.prefixNaming.enable = false
     } else {
-      userSettings.imageName.autoAddHash = true
+      userSettings.imageName.autoAddHash = false
     }
     persistUserSettings()
   },
