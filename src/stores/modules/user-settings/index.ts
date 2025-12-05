@@ -21,13 +21,13 @@ import { imgLinkRuleVerification } from '@/stores/modules/user-settings/utils'
 
 const initSettings: UserSettingsModel = {
   imageName: {
-    autoAddHash: true,
+    autoAddHash: false,
     autoTimestampNaming: false,
     prefixNaming: { enable: false, prefix: '' }
   },
   compress: {
     enable: true,
-    encoder: CompressEncoderEnum.webP
+    encoder: CompressEncoderEnum.avif
   },
   theme: {
     mode: ThemeModeEnum.system
@@ -36,6 +36,12 @@ const initSettings: UserSettingsModel = {
   imageLinkType: {
     selected: ImageLinkTypeEnum.jsDelivr,
     presetList: {
+      // zz
+      [`${ImageLinkTypeEnum.zz}`]: {
+        id: getUuid(),
+        name: ImageLinkTypeEnum.zz,
+        rule: 'http://images.chn.us.kg/{{path}}'
+      },
       // GitHubPages
       [`${ImageLinkTypeEnum.GitHubPages}`]: {
         id: getUuid(),
@@ -69,7 +75,7 @@ const initSettings: UserSettingsModel = {
     }
   },
   imageLinkFormat: {
-    enable: false,
+    enable: true,
     selected: 'Markdown',
     presetList: [
       {
@@ -83,14 +89,18 @@ const initSettings: UserSettingsModel = {
       {
         name: 'BBCode',
         format: '[img]imageLink[/img]'
+      },
+      {
+        name: 'url',
+        format: 'imageLink'
       }
     ]
   },
   starred: false,
   watermark: {
-    enable: false,
-    text: 'PicX',
-    fontSize: 50,
+    enable: true,
+    text: '@琅環书生',
+    fontSize: 40,
     position: WatermarkPositionEnum.rightBottom,
     textColor: '#FFFFFF',
     opacity: 0.5

@@ -124,6 +124,8 @@ export interface ImageLinkFormatModel {
  */
 export enum ImageLinkTypeEnum {
   // eslint-disable-next-line no-unused-vars
+  zz = 'zz',
+  // eslint-disable-next-line no-unused-vars
   GitHub = 'GitHub',
   // eslint-disable-next-line no-unused-vars
   GitHubPages = 'GitHub Pages',
