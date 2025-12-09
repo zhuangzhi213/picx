@@ -98,7 +98,7 @@ const initSettings: UserSettingsModel = {
   },
   starred: false,
   watermark: {
-    enable: true,
+    enable: false,
     text: '@琅環书生',
     fontSize: 40,
     position: WatermarkPositionEnum.centerBottom,
